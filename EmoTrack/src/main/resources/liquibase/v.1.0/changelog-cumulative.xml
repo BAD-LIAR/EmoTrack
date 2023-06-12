@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
+        logicalFilePath="path-independent">
+
+    <changeSet id="af52db70-6b21-4283-b63d-224ef5f39081" author="ngvozdev@gmail.com" runOnChange="true">
+        <comment>Create tables</comment>
+        <sqlFile path="v.1.0/scripts/2023-03-19-create-tables.sql" relativeToChangelogFile="true" splitStatements="true" encoding="utf8"/>
+    </changeSet>
+
+    <changeSet id="8640481d-492e-49a6-9f6b-fd40bd671966" author="ngvozdev@gmail.com" runOnChange="true">
+        <comment>Create tables</comment>
+        <sqlFile path="v.1.0/scripts/2023-04-23-insert-test-data.sql" relativeToChangelogFile="true" splitStatements="true" encoding="utf8"/>
+    </changeSet>
+    <changeSet id="e2ec768a-2ebc-4ea8-8c73-16194e4b249c" author="ngvozdev@gmail.com" runOnChange="true">
+        <comment>Add column</comment>
+        <sqlFile path="v.1.0/scripts/2023-04-26-add-column.sql" relativeToChangelogFile="true" splitStatements="true" encoding="utf8"/>
+    </changeSet>
+
+
+</databaseChangeLog>

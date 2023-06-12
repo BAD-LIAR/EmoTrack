@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${SPRING_JDBC_HOST:localhost}:${SPRING_JDBC_PORT:3306}/EmoTrack?createDatabaseIfNotExist=true&autoReconnect=true&serverTimezone=UTC
+    username: root
+    password: mypassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  liquibase:
+    change-log: classpath:liquibase/changelog.xml
+  jpa:
+    hibernate.ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    show-sql: true
+  mvc:
+    dispatch-options-request: true
+    format:
+      date: iso
+  kafka:
+    bootstrap-servers: localhost:9092
+    to-predict-topic: "to_predict_queue"
+    predicted-queue: "predicted_queue"
+    group-id: test
+  jackson:
+#    serialization:
+#      write-dates-as-timestamps: true
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat

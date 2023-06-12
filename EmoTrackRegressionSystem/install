@@ -1,0 +1,5 @@
+pip install kafka-python
+pip install gensim
+pip install joblib
+pip install pandas
+pip install sklearn
