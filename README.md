@@ -18,3 +18,12 @@ MySQL, JDK 11, Spring Boot, React, OpenAI, LiquiBase, Gradle, MapStract, Python 
 
 #### Algorithms
 Random Forest, word2vec
+
+
+### Application part manual
+
+There are 4 components of this application:
+  1) EmoTrack - this is backend web part.
+  2) EmoTrackRegressionSystem - this is system, that use machine learning models to predict the state
+  3) OpenAiConnect - the system, that was use OpenAI API to generate training dataset
+  4) client - clieтt web app part
